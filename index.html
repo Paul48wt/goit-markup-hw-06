@@ -355,7 +355,7 @@
       <!-- clients -->
       <section class="clients">
         <div class="container">
-          <h2 class="clents-title">Постоянные клиенты</h2>
+          <h2 class="clients-title">Постоянные клиенты</h2>
 
           <ul class="clients-list list">
             <li class="client-item">
@@ -399,46 +399,39 @@
       </section>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <p class="modal-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
           <form class="modal-form">
-            <h2 class="modal-form-title">
-              Оставьте свои данные, мы вам перезвоним
-            </h2>
             <ul class="modal-list list">
               <li class="modal-list-item">
                 <label class="modal-label-name">
                   Имя
-                  <div class="modal-form-position">
-                    <input
-                      class="modal-form-input"
-                      type="text"
-                      name="username"
-                    />
-                    <svg class="modal-input-icon" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#person-black"></use>
-                    </svg>
-                  </div>
+
+                  <input class="modal-form-input" type="text" name="username" />
+                  <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#person-black"></use>
+                  </svg>
                 </label>
               </li>
               <li class="modal-list-item">
                 <label class="modal-label-name">
                   Телефон
-                  <div class="modal-form-position">
-                    <input class="modal-form-input" type="tel" name="tel" />
-                    <svg class="modal-input-icon" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#phone-black"></use>
-                    </svg>
-                  </div>
+
+                  <input class="modal-form-input" type="tel" name="tel" />
+                  <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#phone-black"></use>
+                  </svg>
                 </label>
               </li>
               <li class="modal-list-item">
                 <label class="modal-label-name">
                   Почта
-                  <div class="modal-form-position">
-                    <input class="modal-form-input" type="email" name="email" />
-                    <svg class="modal-input-icon" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#email-black"></use>
-                    </svg>
-                  </div>
+
+                  <input class="modal-form-input" type="email" name="email" />
+                  <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#email-black"></use>
+                  </svg>
                 </label>
               </li>
               <li class="modal-list-item">
@@ -448,15 +441,21 @@
                   <textarea
                     class="modal-form-input comments"
                     name="comments"
-                    rows="6"
                     placeholder="Введите текст"
                   ></textarea>
                 </label>
               </li>
             </ul>
             <label class="agreement">
-              <input type="checkbox" name="agreement" value="" />Соглашаюсь с
-              рассылкой и принимаю <a href="">Условия договора</a>
+              <input
+                class="agreement__checkbox visually-hidden"
+                type="checkbox"
+                name="agreement"
+                value="agree"
+              /><svg class="agreement__uncheck-icon" width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon-uncheck"></use></svg
+              >Соглашаюсь с рассылкой и принимаю &#160;
+              <a class="agreement__link" href="">Условия договора</a>
             </label>
             <button class="modal-button button" type="submit">Отправить</button>
           </form>
