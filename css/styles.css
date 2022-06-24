@@ -387,8 +387,10 @@ body {
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  /* transition: background-color 250ms var(--time-cubic); */
+.agreement__checkbox:focus + .agreement__uncheck-icon {
+  fill: var(--accent-color);
 }
 
 .agreement__checkbox + .agreement__uncheck-icon {
@@ -396,7 +398,8 @@ body {
   background-color: transparent;
   border-radius: 3px;
 
-  transition: background-color 250ms var(--time-cubic);
+  transition: background-color 250ms var(--time-cubic),
+    fill 250ms var(--time-cubic);
 }
 
 .agreement__uncheck-icon {
